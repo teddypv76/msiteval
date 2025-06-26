@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="blackjack.css">
+</head>
+<body>
+
+<div class="toggle-btn" onclick="toggleSidebar()" id="toggleBtn">☰</div>
+
+<!-- Le volet -->
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li>🏠 <span><a href="index.html" style="color: inherit; text-decoration: none;">Acceuil</a></span></li>
+    <li>🎬 <span><a href="morpion.html" style="color: inherit; text-decoration: none;">Morpion</span></li>
+    <li>📺 <span><a href="blackjack.html" style="color: inherit; text-decoration: none;">Blackjack</span></li>
+    <li>🕒 <span><a href="FVC_VAL.html" style="color: inherit; text-decoration: none;">FVC_VAL</a></span></li>
+  </ul>
+</div>
+
+  <h1><a href="miku.html"style="color: inherit; text-decoration: none;"> Blackjack </a></h1>
+
+  <div class="stats">
+    <p>Jetons : <span id="chips">500</span></p>
+    <label>Mise :
+      <input type="number" id="bet" value="10" min="1" />
+    </label>
+  </div>
+
+  <div id="game">
+    <div>
+      <h2>Joueur</h2>
+      <div id="player-cards" class="card-row"></div>
+      <p id="player-score">Score : 0</p>
+    </div>
+
+    <div>
+      <h2>Croupier</h2>
+      <div id="dealer-cards" class="card-row"></div>
+      <p id="dealer-score">Score : ?</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="hit">Tirer</button>
+    <button id="stand">Rester</button>
+    <button id="restart">Nouvelle Partie</button>
+  </div>
+
+  <p id="result"></p>
+
+  <script src="blackjack.js"></script>
+</body>
+</html>

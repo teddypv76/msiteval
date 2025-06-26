@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link href="morpion.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeu de Morpion</title>
+
+</head>
+<body>
+<div class="toggle-btn" onclick="toggleSidebar()" id="toggleBtn">☰</div>
+
+<!-- Le volet -->
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li>🏠 <span><a href="index.html" style="color: inherit; text-decoration: none;">Acceuil</a></span></li>
+    <li>🎬 <span><a href="morpion.html" style="color: inherit; text-decoration: none;">Morpion</span></li>
+    <li>📺 <span><a href="blackjack.html" style="color: inherit; text-decoration: none;">Blackjack</span></li>
+    <li>🕒 <span><a href="FVC_VAL.html" style="color: inherit; text-decoration: none;">FVC_VAL</a></span></li>
+  </ul>
+</div>
+
+  <h1>Jeu de Morpion</h1>
+  <div id="game"></div>
+  <div id="result"></div>
+  <button id="reset">Recommencer</button>
+
+    <script src="morpion.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MIKU</title>
+    <!-- Déclarer la feuille de style ici-->
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+<body>
+<!-- Bouton indépendant, toujours visible -->
+<div class="toggle-btn" onclick="toggleSidebar()" id="toggleBtn">☰</div>
+
+<!-- Le volet -->
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li>🏠 <span><a href="index.html" style="color: inherit; text-decoration: none;">Acceuil</a></span></li>
+    <li>🎬 <span><a href="morpion.html" style="color: inherit; text-decoration: none;">Morpion</span></li>
+    <li>📺 <span><a href="blackjack.html" style="color: inherit; text-decoration: none;">Blackjack</span></li>
+    <li>🕒 <span><a href="FVC_VAL.html" style="color: inherit; text-decoration: none;">FVC_VAL</a></span></li>
+  </ul>
+</div>
+
+
+</body>
+    <main>
+        <h1>Bienvenue sur le site Miku popipo</h1>
+
+        
+        <p>Hatsune Miku (初音ミク?, premier son du futur), est une chanteuse virtuelle japonaise tenant
+        lieu d'avatar commercial des premiers opus de la série des Vocaloid, s'exprimant par le biais
+        d'une application de synthèse vocale développée par Crypton Future Media. Cette banque de voix 
+        utilise les logiciels Vocaloid 2, Vocaloid 3 ou encore Vocaloid 4 de Yamaha. Sa voix est synthétisée à partir de celle de l'actrice Saki Fujita.<br></br>
+
+Hatsune Miku réalise des concerts sur scène sous forme d'hologramme. Miku est, à la base, représentée en une
+ jeune fille de 17 ans avec de longues couettes de couleur turquoise, des yeux turquoise et une tenue futuriste rappelant vaguement l'uniforme scolaire japonais.
+  En revanche, elle ne possède pas vraiment de biographie fictive, tout étant réservé à l'imagination des internautes. Elle est la plus célèbre des Vocaloid au Japon
+   mais aussi du monde entier. Cette icône culturelle japonaise est d'ailleurs reconnue par nombre d'internautes comme une véritable chanteuse, massivement popularisée sur Internet.<br></br>
+
+L'exploitation de sa banque vocale permet la création de véritables musiques, qui ont grandement contribué à sa popularité et son statut de personnalité de la pop culture. Ces chansons
+ approuvées par ses responsables sont retrouvables dans les différents jeux lui étant dédiés, comme la série des project DIVA.</p>
+    </main>
+<img id="triggerImg" src="miku.jpg" alt="Click me" style="cursor:pointer; width:150px;">
+<div id="modal">
+  <span id="modalClose">&times;</span>
+  <img id="modalImg" src="brazilm.jpg" alt="Large image">
+</div>
+
+<script src="index.js"></script>
+ </html>

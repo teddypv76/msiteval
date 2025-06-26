@@ -1,0 +1,149 @@
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+    }
+
+    #game {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      border: 2px solid #333;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cell img {
+      width: 80%;
+      height: 80%;
+    }
+
+    #result {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    #reset {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    html, body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  background: linear-gradient(135deg, #137a7f, #e22885);
+}
+h1 {
+  font-size: 36px;
+  color: #86cecb;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p{
+    font-size :20px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-top: 3cm;
+}
+
+  #modal {
+    display: none;
+    position: fixed; 
+    z-index: 999; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  #modal img {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  #modalClose {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0cecec;
+  padding-top: 20px;
+  overflow-x: hidden;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  z-index: 1000;
+}
+
+.sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1100;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background: #e22885;
+}
+
+.sidebar ul li span {
+  margin-left: 10px;
+}
