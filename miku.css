@@ -25,13 +25,23 @@ h1 {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
   cursor: pointer;
+  filter: blur(35px); /* Floutage */
 }
 
 .gallery img:hover {
   transform: scale(1.05);
 }
+
+.lightbox img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  object-position: center;
+  filter: none; /* L’image agrandie est nette */
+}
+
 
 .lightbox {
   position: fixed;
