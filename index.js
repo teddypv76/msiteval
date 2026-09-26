@@ -4,7 +4,7 @@
   const closeBtn = document.getElementById('modalClose');
   trigger.onclick = function() {
     modal.style.display = "block";
-    modalImg.src = 'big-image.jpg'; // target image
+    modalImg.src = 'img/miku3.png'; // target image
   }
   closeBtn.onclick = function() {
     modal.style.display = "none";
